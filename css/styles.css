@@ -1,6 +1,7 @@
 :root {
+
     /*Fonts*/
-    --main-font: Roboto; san-serif;
+    --main-font: Roboto, san-serif;
     --secondary-font: Raleway;
     
     /*Text colors*/
@@ -14,9 +15,10 @@
     --main-bg-cl: #2F303A;
 
     /*Others*/
+
 }
 
-/*INDEX.HTML*/
+/*1.INDEX.HTML*/
 
 .page {
     font-family:var(--main-font) ;
@@ -24,6 +26,7 @@
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
     font-size: 14px;
+    margin: 0;
 }
 
 .link {
@@ -33,6 +36,18 @@
 
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15;
+    padding-right: 15;
+    margin-left: auto;
+    margin-right: auto;
+
+    outline: 5px solid red;
 }
 
 .link-logo {
@@ -43,14 +58,13 @@
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     text-decoration: none;
-
 }  
 
 .logo-web {
     color: var(--accent-txt-cl);
 }
 
-/*Header*/
+/*HEADER*/
 
 .header .link {
     font-weight: 500;
@@ -58,13 +72,13 @@
     letter-spacing: 0.02em;
     color: var(--main-txt-cl);
 }
+
 .header .studio,
 .header .portfolio {
     color: var(--accent-txt-cl);
     font-family: inherit;
 }
 
- 
 .header .link:hover,
 .header .link:focus {
     color: var(--accent-txt-cl);
@@ -100,6 +114,8 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--light-txt-cl);
+    margin: 0;
+    padding: 0;
 }
 
 /*Особливості*/
@@ -159,7 +175,7 @@
     color: var(--dark-txt-cl);
 }
 
-/* Footer*/
+/* FOOTER*/
 
 .footer {
     background-color: var(--main-bg-cl);
@@ -172,6 +188,7 @@
 .address {
     font-style: normal;
 }
+
 .address-location {
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
@@ -189,7 +206,7 @@
     color: var(--accent-txt-cl);
 }
 
-/*PORTFOLIO.HTML*/
+/*2.PORTFOLIO.HTML*/
 
 .main {
     font-family: var(--main-font);
@@ -199,7 +216,8 @@
     color: var(--main-txt-cl);
 }
 
-/*Навігація по сайту*/
+/*Навігація по сторінці*/
+
 .filters .btn {
     cursor: pointer;
     font-weight: 500;
