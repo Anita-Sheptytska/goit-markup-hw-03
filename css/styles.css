@@ -13,6 +13,7 @@
     /*Background colors*/
     --accent-bg-cl: #2196F3;
     --main-bg-cl: #2F303A;
+    --grey-bg-cl: #F5F4FA;
 
     /*Others*/
 
@@ -28,6 +29,7 @@
     font-size: 14px;
     margin: 0;
     width: 1600 px;
+
 }
 
 .link {
@@ -43,12 +45,12 @@
 
 .container {
     width: 1200px;
-    padding-left: 15;
-    padding-right: 15;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 
-    outline: 5px solid red;
+
 }
 
 .link-logo {
@@ -59,6 +61,9 @@
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    display: block;
 }  
 
 .logo-web {
@@ -108,17 +113,21 @@ ul {
 
 .main-nav {
     margin-right: auto;
+    margin-left: auto;
 }
 
 .list-nav {
     display: flex;
     gap: 50px;
+    padding-top: 32px 0;
 }
+
 
 .list-contact {
     display: flex;
     gap: 50px;
     padding-left: 344px;
+    padding-top: 32px 0;
 }
 
 .header-container {
@@ -141,12 +150,17 @@ ul {
     color: var(--light-txt-cl);
     cursor: pointer;
     background-color: var(--accent-bg-cl);
+    padding: 10px 32px;
+    border: none;
+    border-radius: 4px;
+
 }
 
 .hero {
     background-color: var(--main-bg-cl);
     text-align: center;
     padding: 200px 0;
+    margin-bottom: 94px;
 }
 
 .hero-container {
@@ -162,7 +176,7 @@ ul {
     text-transform: uppercase;
     color: var(--light-txt-cl);
     margin: 0;
-    padding: 0;
+    padding-bottom: 30px;
 }
 
 /*Особливості*/
@@ -185,6 +199,8 @@ ul {
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
+    
 }
 
 .features-subtitle {
@@ -193,6 +209,15 @@ ul {
     color: var(--dark-txt-cl)
 }
 
+.features-list {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 118px;
+}
+
+.features-item {
+    width: 270px;
+}
 /*Чим ми займаємось*/
 
 .projects-title,
@@ -204,14 +229,24 @@ ul {
     letter-spacing: 0.03em;
 }
 
+.projects-list {
+    display: flex;
+    gap: 30px;
+    padding-top: 50px;
+}
+
 /*Наша команда*/
 
+.team {
+    background: var(--grey-bg-cl);
+}
 .team-partner {
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19 / 16);
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
 }
 
 .team-work {
@@ -220,12 +255,40 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--dark-txt-cl);
+    margin-bottom: 30px;
+}
+
+.team-list {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.team-title {
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.team-cards {
+    background: var(--background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+}
+
+.team-image {
+    margin-bottom: 30px;
+}
+
+.team-container {
+    padding-bottom: 94px;
 }
 
 /* FOOTER*/
 
 .footer {
     background-color: var(--main-bg-cl);
+    padding-bottom: 60px;
 }
 
 .logo-studio {
@@ -240,6 +303,8 @@ ul {
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--light-txt-cl);
+    margin-bottom: 9px;
+    display: inline-block;
 }
 
 .address-list {
@@ -251,6 +316,18 @@ ul {
 .footer .link:hover,
 .footer .link:focus {
     color: var(--accent-txt-cl);
+}
+
+.address-item {
+    margin-bottom: 9px;
+}
+
+.adress-item:last-child {
+    margin-bottom: 0;
+}
+
+.logo-footer {
+    display: inline-block;
 }
 
 /*2.PORTFOLIO.HTML*/
