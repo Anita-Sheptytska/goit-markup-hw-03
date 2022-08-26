@@ -27,6 +27,7 @@
     color: var(--main-txt-cl);
     font-size: 14px;
     margin: 0;
+    width: 1600 px;
 }
 
 .link {
@@ -64,6 +65,22 @@
     color: var(--accent-txt-cl);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 /*HEADER*/
 
 .header .link {
@@ -89,6 +106,30 @@
     color: var(--dark-txt-cl);
 }
 
+.main-nav {
+    margin-right: auto;
+}
+
+.list-nav {
+    display: flex;
+    gap: 50px;
+}
+
+.list-contact {
+    display: flex;
+    gap: 50px;
+    padding-left: 344px;
+}
+
+.header-container {
+    align-items: center;
+    display: flex;
+}
+
+.header {
+    border: 1px solid #ECECEC;
+}
+
 /*Hero*/
 
 .hero .btn {
@@ -104,6 +145,12 @@
 
 .hero {
     background-color: var(--main-bg-cl);
+    text-align: center;
+    padding: 200px 0;
+}
+
+.hero-container {
+    width: 696px;
 }
 
 .hero-title {
