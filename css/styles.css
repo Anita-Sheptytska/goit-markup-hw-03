@@ -357,8 +357,8 @@ ul {
     padding: 6px 22px;
 }
 
-.filters .btn:hover,
-.filters .btn:focus {
+.filters-list .btn:hover,
+.filters-list .btn:focus {
     background-color: var(--accent-bg-cl);
     color: var(--light-txt-cl)
 }
